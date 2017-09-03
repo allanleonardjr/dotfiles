@@ -1,6 +1,6 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " https://github.com/elzr/vim-json/issues/52
-execute pathogen#infect()
+"execute pathogen#infect()
 syntax on
 filetype plugin indent on
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -46,10 +46,6 @@ set noerrorbells
 set novisualbell
 set t_vb=
 set tm=500
-
-
-
-
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
