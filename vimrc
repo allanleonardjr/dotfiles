@@ -68,3 +68,6 @@ set tw=500
 set ai "Auto indent
 set si "Smart indent
 set wrap "Wrap lines
+
+" Stop quotes from being hidden in json files
+set conceallevel=0
