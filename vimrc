@@ -47,6 +47,9 @@ set novisualbell
 set t_vb=
 set tm=500
 
+" Show status bar along with full file path
+set laststatus=2
+set statusline+=%F
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related
