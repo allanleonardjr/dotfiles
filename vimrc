@@ -51,6 +51,9 @@ set tm=500
 set laststatus=2
 set statusline+=%F
 
+" Disable automatic comment insertion on the next line
+set formatoptions-=cro
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
