@@ -54,6 +54,11 @@ set statusline+=%F
 " Disable automatic comment insertion on the next line
 set formatoptions-=cro
 
+" Set status line so that it shows the full file path
+set laststatus=2
+set statusline+=%F
+
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -74,3 +79,6 @@ set tw=500
 set ai "Auto indent
 set si "Smart indent
 set wrap "Wrap lines
+
+" Stop quotes from being hidden in json files
+set conceallevel=0
