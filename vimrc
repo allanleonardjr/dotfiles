@@ -14,6 +14,9 @@ filetype indent on
 " Turn on line numbering
 set number
 
+" Turn on ruler to show line position (also can be shown with CTRL-G)
+set ruler
+
 " Configure backspace so it acts as it should act
 set backspace=eol,start,indent
 set whichwrap+=<,>,h,l
@@ -51,9 +54,6 @@ set tm=500
 set laststatus=2
 set statusline+=%F
 
-" Disable automatic comment insertion on the next line
-set formatoptions-=cro
-
 " Set status line so that it shows the full file path
 set laststatus=2
 set statusline+=%F
@@ -82,3 +82,6 @@ set wrap "Wrap lines
 
 " Stop quotes from being hidden in json files
 set conceallevel=0
+
+" Disable automatic comment insertion on the next line
+set formatoptions-=cro
