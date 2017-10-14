@@ -90,6 +90,7 @@ set formatoptions-=cro
 set foldcolumn=3
 " Set folding method to markers
 "set foldmethod=marker
+nnoremap <space> za
 
 " Turn on folding for markdown files
 let g:markdown_folding=1

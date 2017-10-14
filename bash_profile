@@ -15,3 +15,4 @@ export PS1="😎  @\h:\[$(tput sgr0)\]\[\033[38;5;6m\][\w]\[\033[1;35m\]\$(__git
 
 alias ll='ls -lahFG'
 alias gg='git status -s'
+alias gitadog='git log --all --decorate --oneline --graph'
