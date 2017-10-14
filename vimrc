@@ -54,10 +54,6 @@ set tm=500
 set laststatus=2
 set statusline+=%F
 
-" Set status line so that it shows the full file path
-set laststatus=2
-set statusline+=%F
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related
@@ -85,3 +81,12 @@ set conceallevel=0
 
 " Disable automatic comment insertion on the next line
 set formatoptions-=cro
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Folding 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Set the number of columns on the left for folding display to 3
+set foldcolumn=3
+" Set folding method to markers
+set foldmethod=marker
