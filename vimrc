@@ -89,4 +89,7 @@ set formatoptions-=cro
 " Set the number of columns on the left for folding display to 3
 set foldcolumn=3
 " Set folding method to markers
-set foldmethod=marker
+"set foldmethod=marker
+
+" Turn on folding for markdown files
+let g:markdown_folding=1
