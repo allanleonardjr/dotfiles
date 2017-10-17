@@ -54,6 +54,8 @@ set tm=500
 set laststatus=2
 set statusline+=%F
 
+" Allow mouse click to position cursor
+set mouse=a
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related
