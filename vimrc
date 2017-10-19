@@ -1,22 +1,35 @@
+" https://github.com/junegunn/vim-plug
+" - Avoid using standard Vim directory names like 'plugin'
+call plug#begin('~/.vim/plugged')
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'tpope/vim-fugitive'
+" Initialize plugin system
+call plug#end()
+
+
+
+
+" Colorscheme
+color desert
+
+" Enable filetype plugins (this is automatically enabled by vim-plug so commenting out)
+"filetype plugin on
+"filetype indent on
+
+" Turn on line numbering
+set number
+set relativenumber
+
+" Turn on ruler to show line position (also can be shown with CTRL-G)
+set ruler
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " https://github.com/elzr/vim-json/issues/52
 "execute pathogen#infect()
 syntax on
 filetype plugin indent on
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-color desert
-
-" Enable filetype plugins
-filetype plugin on
-filetype indent on
-
-" Turn on line numbering
-set number
-
-" Turn on ruler to show line position (also can be shown with CTRL-G)
-set ruler
-
 " Configure backspace so it acts as it should act
 set backspace=eol,start,indent
 set whichwrap+=<,>,h,l
