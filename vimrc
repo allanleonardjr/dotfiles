@@ -4,6 +4,10 @@ call plug#begin('~/.vim/plugged')
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-fugitive'
+Plug 'scrooloose/nerdtree'
+Plug 'tpope/vim-surround' " (https://vimawesome.com/plugin/surround-vim)
+Plug 'altercation/vim-colors-solarized'
+Plug 'valloric/youcompleteme' " Follow installation instructions: (https://vimawesome.com/plugin/youcompleteme#mac-os-x)
 " Initialize plugin system
 call plug#end()
 
