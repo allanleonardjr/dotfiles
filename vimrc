@@ -14,8 +14,10 @@ call plug#end()
 
 
 
-" Colorscheme
-color desert
+" Set dark solarized theme
+set term=xterm-256color
+set background=dark
+color solarized
 
 " Enable filetype plugins (this is automatically enabled by vim-plug so commenting out)
 "filetype plugin on
