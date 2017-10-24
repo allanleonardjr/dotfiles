@@ -11,35 +11,27 @@ Plug 'valloric/youcompleteme' " Follow installation instructions: (https://vimaw
 " Initialize plugin system
 call plug#end()
 
-
-
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Colors
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Set dark solarized theme
 set term=xterm-256color
 set background=dark
 color solarized
 
-" Enable filetype plugins (this is automatically enabled by vim-plug so commenting out)
-"filetype plugin on
-"filetype indent on
-
-" Turn on line numbering
-set number
-set relativenumber
-
-" Turn on ruler to show line position (also can be shown with CTRL-G)
-set ruler
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" https://github.com/elzr/vim-json/issues/52
-"execute pathogen#infect()
 syntax on
 filetype plugin indent on
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Configure backspace so it acts as it should act
-set backspace=eol,start,indent
-set whichwrap+=<,>,h,l
 
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Show status bar along with full file path
+set laststatus=2
+
+" Set Airline Theme
+let g:airline_theme="luna"
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Ignore case when searching
 set ignorecase
 
@@ -72,10 +64,6 @@ set novisualbell
 set t_vb=
 set tm=500
 
-" Show status bar along with full file path
-set laststatus=2
-set statusline+=%F
-
 " Allow mouse click to position cursor
 set mouse=a
 
@@ -106,6 +94,9 @@ set conceallevel=0
 " Disable automatic comment insertion on the next line
 set formatoptions-=cro
 
+" Show numbering and relative numbering 
+set number
+set relativenumber
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Folding 
