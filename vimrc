@@ -4,10 +4,15 @@ call plug#begin('~/.vim/plugged')
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-surround' " (https://vimawesome.com/plugin/surround-vim)
 Plug 'altercation/vim-colors-solarized'
-Plug 'valloric/youcompleteme' " Follow installation instructions: (https://vimawesome.com/plugin/youcompleteme#mac-os-x)
+
+" Follow installation instructions: (https://vimawesome.com/plugin/youcompleteme#mac-os-x)
+" 1.) cd ~/.vim/plugged/youcompleteme
+" 2.) ./install.py
+Plug 'valloric/youcompleteme' 
 " Initialize plugin system
 call plug#end()
 
@@ -67,6 +72,9 @@ set tm=500
 " Allow mouse click to position cursor
 set mouse=a
 
+" Decrease update time from 4 seconds to 250 miliseconds
+set updatetime=250 " suggested by vim-gutter
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -109,3 +117,9 @@ nnoremap <space> za
 
 " Turn on folding for markdown files
 let g:markdown_folding=1
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Custom Mappings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+noremap <F8> :NERDTreeToggle<CR>
