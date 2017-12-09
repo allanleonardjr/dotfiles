@@ -149,5 +149,5 @@ let g:jsx_ext_require = 0
 autocmd vimenter * NERDTree
 "autocmd StdinReadPre * let s:std_in=1
 "autocmd VimEnter * if argc() == 0 && !exists(“s:std_in”) | NERDTree | endif
-"nnoremap <Leader>f :NERDTreeToggle<Enter>
-nnoremap <silen><Leader>f :NERDTreeFind<Enter>
+nnoremap <Leader>f :NERDTreeToggle<Enter>
+nnoremap <Leader>g :NERDTreeFind<Enter>
