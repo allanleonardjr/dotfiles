@@ -3,7 +3,9 @@
 call plug#begin('~/.vim/plugged')
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-unimpaired'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tpope/vim-surround' " (https://vimawesome.com/plugin/surround-vim)
@@ -12,6 +14,11 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'valloric/youcompleteme' " Follow installation instructions: (https://vimawesome.com/plugin/youcompleteme#mac-os-x)
+
+" Follow installation instructions: (https://vimawesome.com/plugin/youcompleteme#mac-os-x)
+" 1.) cd ~/.vim/plugged/youcompleteme
+" 2.) ./install.py
+Plug 'valloric/youcompleteme' 
 " Initialize plugin system
 call plug#end()
 
@@ -71,6 +78,9 @@ set tm=500
 " Allow mouse click to position cursor
 set mouse=a
 
+" Decrease update time from 4 seconds to 250 miliseconds
+set updatetime=250 " suggested by vim-gutter
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -120,3 +130,8 @@ let g:markdown_folding=1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " By default, JSX syntax highlighting and indenting will be enabled only for files with the .jsx extension. If you would like JSX in .js files, add:
 let g:jsx_ext_required = 0
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Custom Mappings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+noremap <F8> :NERDTreeToggle<CR>
