@@ -131,6 +131,8 @@ let g:markdown_folding=1
 " By default, JSX syntax highlighting and indenting will be enabled only for files with the .jsx extension. If you would like JSX in .js files, add:
 let g:jsx_ext_required = 0
 
+" Clipboard
+set clipboard=unnamed
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Custom Mappings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
