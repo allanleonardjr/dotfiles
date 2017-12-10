@@ -8,11 +8,13 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-unimpaired'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'pangloss/vim-javascript'
-Plug 'mxw/vim-jsx'
 Plug 'tpope/vim-surround' " (https://vimawesome.com/plugin/surround-vim)
 Plug 'chrisbra/Colorizer'
 Plug 'altercation/vim-colors-solarized'
+"" https://github.com/mxw/vim-jsx
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
+Plug 'valloric/youcompleteme' " Follow installation instructions: (https://vimawesome.com/plugin/youcompleteme#mac-os-x)
 
 " Follow installation instructions: (https://vimawesome.com/plugin/youcompleteme#mac-os-x)
 " 1.) cd ~/.vim/plugged/youcompleteme
@@ -125,6 +127,15 @@ let g:markdown_folding=1
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Misc
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" By default, JSX syntax highlighting and indenting will be enabled only for files with the .jsx extension. If you would like JSX in .js files, add:
+let g:jsx_ext_required = 0
+
+" Clipboard
+"set clipboard=unnamed
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Custom Mappings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 noremap <F8> :NERDTreeToggle<CR>
@@ -139,6 +150,5 @@ let g:jsx_ext_require = 0
 autocmd vimenter * NERDTree
 "autocmd StdinReadPre * let s:std_in=1
 "autocmd VimEnter * if argc() == 0 && !exists(“s:std_in”) | NERDTree | endif
-"nnoremap <Leader>f :NERDTreeToggle<Enter>
-nnoremap <silen><Leader>f :NERDTreeFind<Enter>
-
+nnoremap <Leader>f :NERDTreeToggle<Enter>
+nnoremap <Leader>g :NERDTreeFind<Enter>
