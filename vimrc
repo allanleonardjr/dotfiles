@@ -7,7 +7,11 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-unimpaired'
 Plug 'scrooloose/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
 Plug 'tpope/vim-surround' " (https://vimawesome.com/plugin/surround-vim)
+Plug 'chrisbra/Colorizer'
 Plug 'altercation/vim-colors-solarized'
 
 " Follow installation instructions: (https://vimawesome.com/plugin/youcompleteme#mac-os-x)
@@ -124,3 +128,17 @@ let g:markdown_folding=1
 " => Custom Mappings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 noremap <F8> :NERDTreeToggle<CR>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Misc
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" By default, JSX syntax highlighting and indenting will be enabled only for files with the .jsx entension. If you would like JSX in .js files, add
+let g:jsx_ext_require = 0
+
+" This will open NERDTree automatically when vim starts up regardless if a file was given or not
+autocmd vimenter * NERDTree
+"autocmd StdinReadPre * let s:std_in=1
+"autocmd VimEnter * if argc() == 0 && !exists(“s:std_in”) | NERDTree | endif
+"nnoremap <Leader>f :NERDTreeToggle<Enter>
+nnoremap <silen><Leader>f :NERDTreeFind<Enter>
+
