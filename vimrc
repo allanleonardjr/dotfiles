@@ -132,7 +132,7 @@ let g:markdown_folding=1
 let g:jsx_ext_required = 0
 
 " Clipboard
-set clipboard=unnamed
+"set clipboard=unnamed
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Custom Mappings
