@@ -19,6 +19,8 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'valloric/youcompleteme' " Follow installation instructions: (https://vimawesome.com/plugin/youcompleteme#mac-os-x)
+Plug 'gorkunov/smartpairs.vim' " This allows smart selections to convert 'vi*' commands into 'viv' commands
+Plug 'wellle/targets.vim'
 
 " Follow installation instructions: (https://vimawesome.com/plugin/youcompleteme#mac-os-x)
 " 1.) cd ~/.vim/plugged/youcompleteme
@@ -157,3 +159,7 @@ autocmd vimenter * NERDTree
 "autocmd VimEnter * if argc() == 0 && !exists(“s:std_in”) | NERDTree | endif
 nnoremap <Leader>f :NERDTreeToggle<Enter>
 nnoremap <Leader>g :NERDTreeFind<Enter>
+
+
+" Increase the timeout so we we have more time to use commands (like the surround command)
+set timeout timeoutlen=3000
