@@ -1,5 +1,9 @@
+" To Install The Plugin Manager follow these directions
 " https://github.com/junegunn/vim-plug
+" curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+"     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 " - Avoid using standard Vim directory names like 'plugin'
+"   ============================================================
 call plug#begin('~/.vim/plugged')
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
