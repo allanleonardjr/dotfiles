@@ -143,8 +143,23 @@ let g:jsx_ext_required = 0
 " set clipboard=unnamed
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Custom Mappings
+" => NERDTree
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Open NERDTree regardless of whether a file was opened or not
+"autocmd VimEnter * NERDTree
+"autocmd VimEnter * wincmd l
+
+" Open NERDTree ONLY if no file was opened when starting Vim
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | NERDTree | endif
+autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | wincmd l | endif
+
+" Close Vim if NERDTree is the only remaining window opened
+autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') | q | endif
+
+" Mappings
+nnoremap <Leader>f :NERDTreeToggle<Enter>
+nnoremap <Leader>g :NERDTreeFind<Enter>
 noremap <F8> :NERDTreeToggle<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -153,12 +168,6 @@ noremap <F8> :NERDTreeToggle<CR>
 " By default, JSX syntax highlighting and indenting will be enabled only for files with the .jsx entension. If you would like JSX in .js files, add
 let g:jsx_ext_require = 0
 
-" This will open NERDTree automatically when vim starts up regardless if a file was given or not
-autocmd vimenter * NERDTree
-"autocmd StdinReadPre * let s:std_in=1
-"autocmd VimEnter * if argc() == 0 && !exists(“s:std_in”) | NERDTree | endif
-nnoremap <Leader>f :NERDTreeToggle<Enter>
-nnoremap <Leader>g :NERDTreeFind<Enter>
 
 
 " Increase the timeout so we we have more time to use commands (like the surround command)
