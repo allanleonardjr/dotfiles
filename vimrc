@@ -18,9 +18,14 @@ Plug 'altercation/vim-colors-solarized'
 "" https://github.com/mxw/vim-jsx
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
+Plug 'w0rp/ale'
 Plug 'valloric/youcompleteme' " Follow installation instructions: (https://vimawesome.com/plugin/youcompleteme#mac-os-x)
 Plug 'gorkunov/smartpairs.vim' " This allows smart selections to convert 'vi*' commands into 'viv' commands
 Plug 'wellle/targets.vim'
+" Asynchronous completion
+Plug 'Shougo/deoplete.nvim'
+Plug 'roxma/nvim-yarp'
+Plug 'roxma/vim-hug-neovim-rpc'
 
 " Follow installation instructions: (https://vimawesome.com/plugin/youcompleteme#mac-os-x)
 " 1.) cd ~/.vim/plugged/youcompleteme
@@ -167,6 +172,14 @@ noremap <F8> :NERDTreeToggle<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " By default, JSX syntax highlighting and indenting will be enabled only for files with the .jsx entension. If you would like JSX in .js files, add
 let g:jsx_ext_require = 0
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => ESLint though Vim
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" https://medium.com/@alexlafroscia/writing-js-in-vim-4c971a95fd49
+let g:ale_fixers = {
+  \ 'javascript': ['eslint']
+  \ }
 
 
 
