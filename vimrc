@@ -22,6 +22,7 @@ Plug 'w0rp/ale'
 Plug 'valloric/youcompleteme' " Follow installation instructions: (https://vimawesome.com/plugin/youcompleteme#mac-os-x)
 Plug 'gorkunov/smartpairs.vim' " This allows smart selections to convert 'vi*' commands into 'viv' commands
 Plug 'wellle/targets.vim'
+Plug 'sbdchd/neoformat'
 " Asynchronous completion
 Plug 'Shougo/deoplete.nvim'
 Plug 'roxma/nvim-yarp'
