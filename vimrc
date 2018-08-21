@@ -55,6 +55,12 @@ set laststatus=2
 " Set Airline Theme
 let g:airline_theme="luna"
 
+" Enable the list of buffers
+let g:airline#extensions#tabline#enabled = 1
+
+" Show just the filename
+let g:airline#extensions#tabline#fnamemod = ':t'
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Ignore case when searching
 set ignorecase
