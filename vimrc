@@ -32,6 +32,10 @@ else
   Plug 'roxma/vim-hug-neovim-rpc'
 endif
 let g:deoplete#enable_at_startup = 1
+" Binary path to your flow, defaults to your $PATH flow 
+let g:deoplete#sources#flow#flow_bin = 'flow' 
+
+
 " post install (yarn install | npm install) then load plugin only for editing supported files
 Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install',
