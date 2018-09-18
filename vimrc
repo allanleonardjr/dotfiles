@@ -24,9 +24,14 @@ Plug 'gorkunov/smartpairs.vim' " This allows smart selections to convert 'vi*' c
 Plug 'wellle/targets.vim'
 Plug 'sbdchd/neoformat'
 " Asynchronous completion
-Plug 'Shougo/deoplete.nvim'
-Plug 'roxma/nvim-yarp'
-Plug 'roxma/vim-hug-neovim-rpc'
+if has('nvim') " https://github.com/Shougo/deoplete.nvim
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/deoplete.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
+let g:deoplete#enable_at_startup = 1
 " post install (yarn install | npm install) then load plugin only for editing supported files
 Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install',
