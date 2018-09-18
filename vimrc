@@ -49,7 +49,7 @@ call plug#end()
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Set dark solarized theme
-set term=xterm-256color
+"set term=xterm-256color
 set background=dark
 color solarized
 
@@ -105,7 +105,7 @@ set tm=500
 
 " Allow mouse click to position cursor
 set mouse+=a
-set ttymouse=xterm2
+"set ttymouse=xterm2
 
 " Decrease update time from 4 seconds to 250 miliseconds
 set updatetime=250 " suggested by vim-gutter
