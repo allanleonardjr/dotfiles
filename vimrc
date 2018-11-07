@@ -29,6 +29,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-eunuch'
 Plug 'machakann/vim-highlightedyank'
+Plug 'ctrlpvim/ctrlp.vim'
 
 " Asynchronous completion
 if has('nvim') " https://github.com/Shougo/deoplete.nvim
@@ -69,7 +70,9 @@ color solarized
 let g:colorizer_auto_filetype='css,html,js,jsx,javascript,javascript.jsx'
 
 syntax on
+" -- Autocompletion --
 filetype plugin indent on
+"set omnifunc=syntaxcomplete#Complete " https://medium.com/vim-drops/css-autocompletion-on-vim-no-plugins-needed-e8df9ce079c7
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -125,6 +128,7 @@ set mouse+=a
 " Decrease update time from 4 seconds to 250 miliseconds
 set updatetime=250 " suggested by vim-gutter
 
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -177,6 +181,9 @@ let g:jsx_ext_required = 0
 
 " Clipboard
 " set clipboard=unnamed
+
+" Checkboxes
+let g:checkbox_states = [' ', '-', 'x']
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => NERDTree
