@@ -17,3 +17,8 @@ export PS1="\h:\[$(tput sgr0)\]\[\033[38;5;6m\][\w]\[\033[1;35m\]\$(__git_ps1): 
 alias ll='ls -lahFG'
 alias gg='git status -s'
 alias gitadog='git log --all --decorate --oneline --graph'
+
+# Setting PATH for Python 3.7
+# The original version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.7/bin:${PATH}"
+export PATH

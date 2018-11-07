@@ -23,6 +23,13 @@ Plug 'valloric/youcompleteme' " Follow installation instructions: (https://vimaw
 Plug 'gorkunov/smartpairs.vim' " This allows smart selections to convert 'vi*' commands into 'viv' commands
 Plug 'wellle/targets.vim'
 Plug 'sbdchd/neoformat'
+Plug 'jkramer/vim-checkbox' " If not working then follow installation instructions from: https://github.com/jkramer/vim-checkbox
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'tpope/vim-eunuch'
+Plug 'machakann/vim-highlightedyank'
+
 " Asynchronous completion
 if has('nvim') " https://github.com/Shougo/deoplete.nvim
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -190,12 +197,14 @@ autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') | q | endif
 nnoremap <Leader>f :NERDTreeToggle<Enter>
 nnoremap <Leader>g :NERDTreeFind<Enter>
 noremap <F8> :NERDTreeToggle<CR>
+nnoremap ; :Buffers<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Misc
+" => Searching, Yanking, Etc.
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" By default, JSX syntax highlighting and indenting will be enabled only for files with the .jsx entension. If you would like JSX in .js files, add
-let g:jsx_ext_require = 0
+set inccommand=split " Either split or nosplit
+"	"nosplit": Shows the effects of a command incrementally, as you type.
+"	"split"	 : Also shows partial off-screen results in a preview window.
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => ESLint though Vim
