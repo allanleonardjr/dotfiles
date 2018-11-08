@@ -31,6 +31,8 @@ Plug 'tpope/vim-eunuch'
 Plug 'machakann/vim-highlightedyank'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'scrooloose/nerdcommenter'
+Plug 'previm/previm'
+Plug 'tyru/open-browser.vim'
 
 " Asynchronous completion
 if has('nvim') " https://github.com/Shougo/deoplete.nvim
@@ -185,6 +187,13 @@ let g:jsx_ext_required = 0
 
 " Checkboxes
 let g:checkbox_states = [' ', '-', 'x']
+
+" Markdown Previewing in Browser
+"   :PrevimOpen - Opens the current file on the browser.
+let g:previm_enable_realtime=1 " This will update the browser in realtime
+
+" make vim-fugitive (and others) use vertical splits instead of horizontal
+set diffopt+=vertical
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => NERDTree
