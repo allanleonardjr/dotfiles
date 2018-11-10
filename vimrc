@@ -33,6 +33,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'previm/previm'
 Plug 'tyru/open-browser.vim'
+Plug 'Valloric/MatchTagAlways' "Used to highlight matching XML/HTML tags that enclose the cursor location
 
 " Asynchronous completion
 if has('nvim') " https://github.com/Shougo/deoplete.nvim
@@ -194,6 +195,18 @@ let g:previm_enable_realtime=1 " This will update the browser in realtime
 
 " make vim-fugitive (and others) use vertical splits instead of horizontal
 set diffopt+=vertical
+
+" MatchTagAlways jump to the closing tag
+nnoremap <Leader>% :MtaJumpToOtherTag<CR>
+
+" Sets the filetypes for MatchTagAlways to work on
+let g:mta_filetypes = {
+    \ 'javascript.jsx' : 1,
+    \ 'html' : 1,
+    \ 'xhtml' : 1,
+    \ 'xml' : 1,
+    \ 'jinja' : 1,
+    \}
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => NERDTree
