@@ -34,6 +34,8 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'previm/previm'
 Plug 'tyru/open-browser.vim'
 Plug 'Valloric/MatchTagAlways' "Used to highlight matching XML/HTML tags that enclose the cursor location
+Plug 'vimwiki/vimwiki', {'branch': 'dev'}
+Plug 'mattn/calendar-vim'
 
 " Asynchronous completion
 if has('nvim') " https://github.com/Shougo/deoplete.nvim
@@ -208,6 +210,12 @@ let g:mta_filetypes = {
     \ 'jinja' : 1,
     \}
 
+" vimwiki/vimwiki
+let g:vimwiki_list = [
+  \{'path': '~/vimwiki/personal', 'syntax': 'markdown', 'ext': '.md'},
+  \{'path': '~/vimwiki/3jpmedia', 'syntax': 'markdown', 'ext': '.md'},
+  \{'path': '~/vimwiki/sermons', 'syntax': 'markdown', 'ext': '.md'},
+  \]
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => NERDTree
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
