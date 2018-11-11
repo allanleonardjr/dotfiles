@@ -258,7 +258,6 @@ let g:ale_fixers = {
   \ }
 
 
-
 " Increase the timeout so we we have more time to use commands (like the surround command)
 set timeout timeoutlen=3000
 
