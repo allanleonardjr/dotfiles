@@ -31,11 +31,13 @@ Plug 'tpope/vim-eunuch'
 Plug 'machakann/vim-highlightedyank'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'scrooloose/nerdcommenter'
-Plug 'previm/previm'
 Plug 'tyru/open-browser.vim'
 Plug 'Valloric/MatchTagAlways' "Used to highlight matching XML/HTML tags that enclose the cursor location
 Plug 'vimwiki/vimwiki', {'branch': 'dev'}
 Plug 'mattn/calendar-vim'
+" Decided to use grip for realtime markdown previews - (https://github.com/joeyespo/grip)
+"Plug 'previm/previm' 
+"Plug 'suan/vim-instant-markdown' " --- (not working - https://github.com/suan/instant-markdown-d/issues/13)
 
 " Asynchronous completion
 if has('nvim') " https://github.com/Shougo/deoplete.nvim
@@ -193,7 +195,7 @@ let g:checkbox_states = [' ', '-', 'x']
 
 " Markdown Previewing in Browser
 "   :PrevimOpen - Opens the current file on the browser.
-let g:previm_enable_realtime=1 " This will update the browser in realtime
+"let g:previm_enable_realtime=1 " This will update the browser in realtime
 
 " make vim-fugitive (and others) use vertical splits instead of horizontal
 set diffopt+=vertical
@@ -216,6 +218,7 @@ let g:vimwiki_list = [
   \{'path': '~/vimwiki/3jpmedia', 'syntax': 'markdown', 'ext': '.md'},
   \{'path': '~/vimwiki/sermons', 'syntax': 'markdown', 'ext': '.md'},
   \]
+let g:vimwiki_table_mappings=1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => NERDTree
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
