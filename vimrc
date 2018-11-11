@@ -243,9 +243,11 @@ nnoremap ; :Buffers<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Searching, Yanking, Etc.
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set inccommand=split " Either split or nosplit
-"	"nosplit": Shows the effects of a command incrementally, as you type.
-"	"split"	 : Also shows partial off-screen results in a preview window.
+if exists('&inccommand')
+  "	"nosplit": Shows the effects of a command incrementally, as you type.
+  "	"split"	 : Also shows partial off-screen results in a preview window.
+  set inccommand=split " Either split or nosplit
+endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => ESLint though Vim
