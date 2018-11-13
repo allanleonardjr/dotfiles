@@ -221,8 +221,8 @@ let g:vimwiki_list = [
 let g:vimwiki_table_mappings=1
 
 "Mappings
-inoremap kj <esc> " this will allow us to type "kj" in insert mode to act as if we pressed the Escape key
-
+" This will allow us to type "kj" in insert mode to act as if we pressed the Escape key
+inoremap kj <esc>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => NERDTree
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
