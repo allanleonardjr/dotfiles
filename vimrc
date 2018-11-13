@@ -219,6 +219,10 @@ let g:vimwiki_list = [
   \{'path': '~/vimwiki/sermons', 'syntax': 'markdown', 'ext': '.md'},
   \]
 let g:vimwiki_table_mappings=1
+
+"Mappings
+inoremap kj <esc> " this will allow us to type "kj" in insert mode to act as if we pressed the Escape key
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => NERDTree
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
