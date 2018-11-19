@@ -223,6 +223,8 @@ let g:vimwiki_table_mappings=1
 "Mappings
 " This will allow us to type "kj" in insert mode to act as if we pressed the Escape key
 inoremap kj <esc>
+" This will allow us to quickly save a document by typing ",,"
+nnoremap ,, <esc>:w<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => NERDTree
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
