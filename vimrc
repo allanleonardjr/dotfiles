@@ -55,7 +55,7 @@ let g:deoplete#sources#flow#flow_bin = 'flow'
 " post install (yarn install | npm install) then load plugin only for editing supported files
 Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install',
-  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue'] }
+  \ 'for': ['javascript', 'typescript', 'css', 'html', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue'] }
 
 " Follow installation instructions: (https://vimawesome.com/plugin/youcompleteme#mac-os-x)
 " 1.) cd ~/.vim/plugged/youcompleteme
