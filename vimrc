@@ -191,7 +191,7 @@ let g:jsx_ext_required = 0
 " set clipboard=unnamed
 
 " Checkboxes
-let g:checkbox_states = [' ', '-', 'x']
+let g:checkbox_states = [' ', '-', 'X']
 
 " Markdown Previewing in Browser
 "   :PrevimOpen - Opens the current file on the browser.
@@ -223,6 +223,10 @@ let g:vimwiki_table_mappings=1
 "Mappings
 " This will allow us to type "kj" in insert mode to act as if we pressed the Escape key
 inoremap kj <esc>
+
+" Quickly save files by using ",," 
+nnoremap ,, :w<CR>
+"inoremap ,, <C-c>:w<CR>a
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => NERDTree
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -252,6 +256,9 @@ if exists('&inccommand')
   "	"split"	 : Also shows partial off-screen results in a preview window.
   set inccommand=split " Either split or nosplit
 endif
+
+" Tired of clearining highlighted searches by searching for "asdfdfllhkj"? Use this:
+nnoremap ,/ :nohlsearch<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => ESLint though Vim
