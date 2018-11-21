@@ -22,3 +22,5 @@ alias gitadog='git log --all --decorate --oneline --graph'
 # The original version is saved in .bash_profile.pysave
 PATH="/Library/Frameworks/Python.framework/Versions/3.7/bin:${PATH}"
 export PATH
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
