@@ -73,7 +73,7 @@ call plug#end()
 " Set dark solarized theme
 "set term=xterm-256color
 set background=dark
-color solarized
+color solarized8_dark_flat
 
 " Colorizer
 "let g:colorizer_auto_color = 1
