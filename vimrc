@@ -35,6 +35,8 @@ Plug 'tyru/open-browser.vim'
 Plug 'Valloric/MatchTagAlways' "Used to highlight matching XML/HTML tags that enclose the cursor location
 Plug 'vimwiki/vimwiki', {'branch': 'dev'}
 Plug 'mattn/calendar-vim'
+Plug 'drewtempelmeyer/palenight.vim'
+Plug 'flazz/vim-colorschemes'
 " Decided to use grip for realtime markdown previews - (https://github.com/joeyespo/grip)
 "Plug 'previm/previm' 
 "Plug 'suan/vim-instant-markdown' " --- (not working - https://github.com/suan/instant-markdown-d/issues/13)
@@ -71,7 +73,7 @@ call plug#end()
 " Set dark solarized theme
 "set term=xterm-256color
 set background=dark
-color solarized
+color solarized8_dark_flat
 
 " Colorizer
 "let g:colorizer_auto_color = 1
