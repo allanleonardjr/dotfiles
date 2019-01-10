@@ -73,7 +73,7 @@ call plug#end()
 " Set dark solarized theme
 "set term=xterm-256color
 set background=dark
-color solarized8_dark_flat
+color  palenight "solarized8_dark_flat
 
 " Colorizer
 "let g:colorizer_auto_color = 1
@@ -87,10 +87,13 @@ filetype plugin indent on
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Show status bar along with full file path
-set laststatus=2
+"set laststatus=2
 
 " Set Airline Theme
-let g:airline_theme="luna"
+let g:airline_theme = 'soda'
+
+" Enable powerline font (so we can get those pretty arrows on the status lines)
+let g:airline_powerline_fonts = 1
 
 " Enable the list of buffers
 let g:airline#extensions#tabline#enabled = 1
