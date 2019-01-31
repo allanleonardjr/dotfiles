@@ -14,7 +14,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tpope/vim-surround' " (https://vimawesome.com/plugin/surround-vim)
 Plug 'chrisbra/Colorizer'
-Plug 'altercation/vim-colors-solarized'
+"Plug 'altercation/vim-colors-solarized'
 "" https://github.com/mxw/vim-jsx
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
@@ -37,6 +37,8 @@ Plug 'vimwiki/vimwiki', {'branch': 'dev'}
 Plug 'mattn/calendar-vim'
 Plug 'drewtempelmeyer/palenight.vim'
 Plug 'flazz/vim-colorschemes'
+Plug 'felixhummel/setcolors.vim'
+Plug 'christoomey/vim-tmux-navigator'
 " Decided to use grip for realtime markdown previews - (https://github.com/joeyespo/grip)
 "Plug 'previm/previm' 
 "Plug 'suan/vim-instant-markdown' " --- (not working - https://github.com/suan/instant-markdown-d/issues/13)
