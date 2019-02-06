@@ -223,7 +223,7 @@ let g:mta_filetypes = {
 let g:vimwiki_list = [
   \{'path': '~/vimwiki/personal', 'syntax': 'markdown', 'ext': '.md'},
   \{'path': '~/vimwiki/3jpmedia', 'syntax': 'markdown', 'ext': '.md'},
-  \{'path': '~/vimwiki/sermons', 'syntax': 'markdown', 'ext': '.md'},
+  \{'path': '~/vimwiki/spiritual', 'syntax': 'markdown', 'ext': '.md'},
   \]
 let g:vimwiki_table_mappings=1
 
