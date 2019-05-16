@@ -2,6 +2,8 @@
 source ~/.git-prompt.sh
 GIT_PS1_SHOWDIRTYSTATE=true
 
+# Vi mode in Bash
+set -o vi
 
 export PATH="/Applications/MacVim.app/Contents/bin:$PATH"
 export ANDROID_HOME=$HOME/Library/Android/sdk
