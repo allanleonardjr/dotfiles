@@ -19,7 +19,7 @@ Plug 'chrisbra/Colorizer'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'w0rp/ale'
-Plug 'valloric/youcompleteme' " Follow installation instructions: (https://vimawesome.com/plugin/youcompleteme#mac-os-x)
+"Plug 'valloric/youcompleteme' " Follow installation instructions: (https://vimawesome.com/plugin/youcompleteme#mac-os-x)
 Plug 'gorkunov/smartpairs.vim' " This allows smart selections to convert 'vi*' commands into 'viv' commands
 Plug 'wellle/targets.vim'
 Plug 'sbdchd/neoformat'
@@ -64,7 +64,7 @@ Plug 'prettier/vim-prettier', {
 " Follow installation instructions: (https://vimawesome.com/plugin/youcompleteme#mac-os-x)
 " 1.) cd ~/.vim/plugged/youcompleteme
 " 2.) ./install.py
-Plug 'valloric/youcompleteme' 
+"Plug 'valloric/youcompleteme' 
 " Initialize plugin system
 call plug#end()
 
@@ -154,7 +154,7 @@ set expandtab
 set smarttab
 
 " 1 tab == 2 spaces
-set shiftwidth=2
+set shiftwidth=4
 set tabstop=2
 
 " Linebreak on 500 characters
@@ -234,6 +234,11 @@ inoremap kj <esc>
 " Quickly save files by using ",," 
 nnoremap ,, :w<CR>
 "inoremap ,, <C-c>:w<CR>a
+
+" Terminal Settings
+highlight TermCursor ctermfg=red guifg=red
+tnoremap <ESC> <C-\><C\n>
+tnoremap kj <C-\><C-n>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => NERDTree
