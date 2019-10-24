@@ -39,6 +39,7 @@ Plug 'drewtempelmeyer/palenight.vim'
 Plug 'flazz/vim-colorschemes'
 Plug 'felixhummel/setcolors.vim'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'makerj/vim-pdf'
 " Decided to use grip for realtime markdown previews - (https://github.com/joeyespo/grip)
 "Plug 'previm/previm' 
 "Plug 'suan/vim-instant-markdown' " --- (not working - https://github.com/suan/instant-markdown-d/issues/13)
@@ -182,6 +183,8 @@ set relativenumber
 set foldcolumn=3
 " Set folding method to markers
 "set foldmethod=marker
+set foldmethod=indent
+set foldlevel=99
 nnoremap <space> za
 
 " Turn on folding for markdown files

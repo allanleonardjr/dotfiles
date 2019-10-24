@@ -3,7 +3,7 @@ source ~/.git-prompt.sh
 GIT_PS1_SHOWDIRTYSTATE=true
 
 # Vi mode in Bash
-set -o vi
+#set -o vi
 
 export PATH="/Applications/MacVim.app/Contents/bin:$PATH"
 export ANDROID_HOME=$HOME/Library/Android/sdk
@@ -13,7 +13,7 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 #export PS1="😎  @\h:\[$(tput sgr0)\]\[\033[38;5;6m\][\w]\[\033[1;35m\]\$(__git_ps1): \[$(tput sgr0)\]\[\033[38;5;15m\]\[$(tput sgr0)\]"
-export PS1="\h:\[$(tput sgr0)\]\[\033[38;5;6m\][\w]\[\033[1;35m\]\$(__git_ps1): \[$(tput sgr0)\]\[\033[38;5;15m\]\[$(tput sgr0)\]"
+export PS1="$(tput sgr0)\]\[\033[38;5;6m\][\w]\[\033[1;35m\]\$(__git_ps1): \[$(tput sgr0)\]\[\033[38;5;15m\]\[$(tput sgr0)\]"
 
 
 alias ll='ls -lahFG'
@@ -26,3 +26,9 @@ PATH="/Library/Frameworks/Python.framework/Versions/3.7/bin:${PATH}"
 export PATH
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+#test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+#
+#if [ -f $HOME/.bashrc ]; then
+#        source $HOME/.bashrc
+#fi
