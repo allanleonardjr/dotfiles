@@ -3,13 +3,15 @@ source ~/.git-prompt.sh
 GIT_PS1_SHOWDIRTYSTATE=true
 
 # Vi mode in Bash
-#set -o vi
+set -o vi
 
 export PATH="/Applications/MacVim.app/Contents/bin:$PATH"
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH=~/Library/Python/3.7/bin:$PATH
+export PATH="/usr/local/opt/mysql-client/bin:$PATH"
+
 
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
