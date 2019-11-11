@@ -10,6 +10,8 @@ export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH=~/Library/Python/3.7/bin:$PATH
+export PATH="/usr/local/opt/mysql-client/bin:$PATH"
+
 
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
