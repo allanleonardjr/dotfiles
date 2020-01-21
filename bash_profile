@@ -12,6 +12,8 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH=~/Library/Python/3.7/bin:$PATH
 export PATH="/usr/local/opt/mysql-client/bin:$PATH"
 
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
