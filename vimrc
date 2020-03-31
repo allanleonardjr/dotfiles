@@ -41,6 +41,7 @@ Plug 'felixhummel/setcolors.vim'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'makerj/vim-pdf'
 Plug 'tpope/vim-obsession'
+Plug 'jparise/vim-graphql'
 " Decided to use grip for realtime markdown previews - (https://github.com/joeyespo/grip)
 "Plug 'previm/previm' 
 "Plug 'suan/vim-instant-markdown' " --- (not working - https://github.com/suan/instant-markdown-d/issues/13)
