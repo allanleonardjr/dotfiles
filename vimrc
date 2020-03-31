@@ -156,7 +156,7 @@ set expandtab
 set smarttab
 
 " 1 tab == 2 spaces
-set shiftwidth=4
+set shiftwidth=2
 set tabstop=2
 
 " Linebreak on 500 characters
@@ -297,11 +297,18 @@ set timeout timeoutlen=3000
 set splitbelow
 set splitright
 
-" We can use different key mappings for easy navigation between splits to save a keystroke. So instead of ctrl-w then j, it’s just ctrl-j:
+" We can use different key mappings for easy navigation between splits to save a keystroke. 
+" So instead of ctrl-w then j, it’s just ctrl-j: Mapping left, down, up, right
+nnoremap <C-h> <C-w><C-h>
 nnoremap <C-j> <C-w><C-j>
 nnoremap <C-k> <C-w><C-k>
 nnoremap <C-l> <C-w><C-l>
-nnoremap <C-h> <C-w><C-h>
+" Mappings to easily move a split to left, bottom, top, right
+nnoremap <CS-h> <C-w><S-h>
+nnoremap <CS-j> <C-w><S-j>
+nnoremap <CS-k> <C-w><S-k>
+nnoremap <CS-l> <C-w><S-l>
+
 
 " Go to tab by number (similar to Chrome but using Leader keep instead of Command Key)
 noremap <leader>1 1gt
