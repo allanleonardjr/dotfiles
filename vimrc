@@ -33,6 +33,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'tyru/open-browser.vim'
 Plug 'Valloric/MatchTagAlways' "Used to highlight matching XML/HTML tags that enclose the cursor location
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py --ts-completer' }
 Plug 'vimwiki/vimwiki', {'branch': 'dev'}
 Plug 'mattn/calendar-vim'
 Plug 'drewtempelmeyer/palenight.vim'
@@ -304,11 +305,11 @@ nnoremap <C-h> <C-w><C-h>
 nnoremap <C-j> <C-w><C-j>
 nnoremap <C-k> <C-w><C-k>
 nnoremap <C-l> <C-w><C-l>
-" Mappings to easily move a split to left, bottom, top, right
-nnoremap <CS-h> <C-w><S-h>
-nnoremap <CS-j> <C-w><S-j>
-nnoremap <CS-k> <C-w><S-k>
-nnoremap <CS-l> <C-w><S-l>
+" Mappings to easily move a split to the left, bottom, top, right
+nnoremap <A-h> <C-w><S-h>
+nnoremap <A-j> <C-w><S-j>
+nnoremap <A-k> <C-w><S-k>
+nnoremap <A-l> <C-w><S-l>
 
 
 " Go to tab by number (similar to Chrome but using Leader keep instead of Command Key)
