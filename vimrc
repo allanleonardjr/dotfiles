@@ -279,6 +279,9 @@ endif
 " Tired of clearining highlighted searches by searching for "asdfdfllhkj"? Use this:
 nnoremap ,/ :nohlsearch<CR>
 
+" Tell Ctrl+P to ignore the following
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => ESLint though Vim
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
