@@ -8,3 +8,4 @@ Collection of dotfiles for easy reuse on multiple machines
 * ln -s ~/.dotfiles/tmux.conf ~/.tmux.conf
 * ln -s ~/.dotfiles/tmux.conf.local ~/.tmux.conf.local
 * ln -s ~/.dotfiles/vimrc ~/.vimrc
+* ln -s ~/.vimrc ~/.config/nvim/init.vim
