@@ -1,3 +1,6 @@
+# Hide the "The default interactive shell is now zsh." for macOS Catalina
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
 # Load in the git branch prompt script.
 source ~/.git-prompt.sh
 GIT_PS1_SHOWDIRTYSTATE=true
