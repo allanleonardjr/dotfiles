@@ -34,6 +34,7 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'tyru/open-browser.vim'
 Plug 'Valloric/MatchTagAlways' "Used to highlight matching XML/HTML tags that enclose the cursor location
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'mbbill/undotree'
 "Plug 'Valloric/YouCompleteMe', { 'do': './install.py --ts-completer' }
 Plug 'vimwiki/vimwiki', {'branch': 'dev'}
 Plug 'mattn/calendar-vim'
@@ -268,6 +269,15 @@ nnoremap <Leader>f :NERDTreeToggle<Enter>
 nnoremap <Leader>g :NERDTreeFind<Enter>
 noremap <F8> :NERDTreeToggle<CR>
 nnoremap ; :Buffers<CR>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Undotree
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nnoremap <Leader>u :UndotreeToggle<CR>
+if has("persistent_undo")
+    set undodir=$HOME/.undodir
+    set undofile
+endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Searching, Yanking, Etc.
