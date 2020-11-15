@@ -46,6 +46,7 @@ Plug 'makerj/vim-pdf'
 Plug 'tpope/vim-obsession'
 Plug 'jparise/vim-graphql'
 Plug 'mattn/emmet-vim'
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 " Decided to use grip for realtime markdown previews - (https://github.com/joeyespo/grip)
 "Plug 'previm/previm' 
 "Plug 'suan/vim-instant-markdown' " --- (not working - https://github.com/suan/instant-markdown-d/issues/13)
