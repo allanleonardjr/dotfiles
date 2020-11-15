@@ -33,7 +33,8 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'tyru/open-browser.vim'
 Plug 'Valloric/MatchTagAlways' "Used to highlight matching XML/HTML tags that enclose the cursor location
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py --ts-completer' }
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+"Plug 'Valloric/YouCompleteMe', { 'do': './install.py --ts-completer' }
 Plug 'vimwiki/vimwiki', {'branch': 'dev'}
 Plug 'mattn/calendar-vim'
 Plug 'drewtempelmeyer/palenight.vim'
@@ -48,17 +49,17 @@ Plug 'mattn/emmet-vim'
 "Plug 'previm/previm' 
 "Plug 'suan/vim-instant-markdown' " --- (not working - https://github.com/suan/instant-markdown-d/issues/13)
 
-" Asynchronous completion
-if has('nvim') " https://github.com/Shougo/deoplete.nvim
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-else
-  Plug 'Shougo/deoplete.nvim'
-  Plug 'roxma/nvim-yarp'
-  Plug 'roxma/vim-hug-neovim-rpc'
-endif
-let g:deoplete#enable_at_startup = 1
-" Binary path to your flow, defaults to your $PATH flow 
-let g:deoplete#sources#flow#flow_bin = 'flow' 
+"" Asynchronous completion
+"if has('nvim') " https://github.com/Shougo/deoplete.nvim
+  "Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+"else
+  "Plug 'Shougo/deoplete.nvim'
+  "Plug 'roxma/nvim-yarp'
+  "Plug 'roxma/vim-hug-neovim-rpc'
+"endif
+"let g:deoplete#enable_at_startup = 1
+"" Binary path to your flow, defaults to your $PATH flow 
+"let g:deoplete#sources#flow#flow_bin = 'flow' 
 
 
 " post install (yarn install | npm install) then load plugin only for editing supported files
