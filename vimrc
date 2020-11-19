@@ -183,6 +183,27 @@ set formatoptions-=cro
 set number
 set relativenumber
 
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Move lines of text up and down 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" On Mac we can't send Alt+key because Alt is used to add unicode characters 
+" so we can just use the literal character in the map command (∆˚¬…)
+" https://stackoverflow.com/questions/7501092/can-i-map-alt-key-in-vim
+
+" Normal mode
+nnoremap ∆ :m .+1<CR>==
+nnoremap ˚ :m .-2<CR>==
+
+" Insert mode
+inoremap ∆ <Esc>:m .+1<CR>==gi
+inoremap ˚ <Esc>:m .-2<CR>==gi
+
+" Visual mode
+vnoremap ∆ :m '>+1<CR>gv=gv
+vnoremap ˚ :m '<-2<CR>gv=gv
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Folding 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -306,7 +327,7 @@ set nobackup
 set nowritebackup
 
 " Give more space for displaying messages.
-set cmdheight=2
+"set cmdheight=2
 
 " Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
 " delays and poor user experience.
@@ -492,10 +513,10 @@ nnoremap <C-j> <C-w><C-j>
 nnoremap <C-k> <C-w><C-k>
 nnoremap <C-l> <C-w><C-l>
 " Mappings to easily move a split to the left, bottom, top, right
-nnoremap <A-h> <C-w><S-h>
-nnoremap <A-j> <C-w><S-j>
-nnoremap <A-k> <C-w><S-k>
-nnoremap <A-l> <C-w><S-l>
+"nnoremap <A-h> <C-w><S-h>
+"nnoremap <A-j> <C-w><S-j>
+"nnoremap <A-k> <C-w><S-k>
+"nnoremap <A-l> <C-w><S-l>
 
 
 " Go to tab by number (similar to Chrome but using Leader keep instead of Command Key)
